@@ -1,0 +1,81 @@
+.editorMain {
+  border-color: 'black';
+  display: flex;
+  height:1000px;
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: lightgray;
+  /* border: 3px solid black */
+}
+
+
+.editorSideToolbar {
+  display: flex;
+  width: 80px;
+  flex-direction: column;
+  box-shadow: 0 2px 5px #ccc;
+
+  background-color: rgb(115, 114, 114);
+  color:#fff;
+  /* border: 1px solid black */
+}
+
+.editorSidePanel {
+
+  width: 300px;
+  min-width: 300px;
+  background-color: rgb(115, 114, 114);
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black
+}
+
+.editorSidePanelButton{
+  width: 10px;
+  height: 80px;
+  position: absolute;
+  top:40%;
+  left:380px;
+  background-color: red;
+}
+
+.editorWorkspace {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(194, 188, 188);
+  width: 800px;
+  justify-content: center;
+  margin-inline: auto;
+  border: 1px solid black
+}
+
+.editorCanvas {
+
+  background-color: rgb(255, 255, 255);;
+  width:50%;
+  height:500px;
+  margin-inline: auto;
+  flex: 1;
+  border: 1px solid black
+}
+
+.editorWorkspaceTopToolbar {
+  background-color: rgb(255, 255, 255);;
+  align-self: center;
+
+}
+
+.editorWorkspaceBottomToolbar {
+  background-color: rgb(255, 255, 255);
+  align-self: center;
+
+}
+
+
+
+@media screen and (min-width:999px) {
+  .editorCanvas {
+    width:80%;
+    background-color:green
+  }
+}
